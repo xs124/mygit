@@ -1,0 +1,13 @@
+git config --global user.name ""
+git config --global user.email ""
+ssh-keygen -t rsa -C 邮箱  一直回车
+ssh -T git@github.com  (known_hosts)
+
+
+git init
+git remote add origin git@github.com:xs124/mygit.git
+git add .
+git commit -m "docs(hello): add projects #1"
+git pull --rebase origin master
+git push -u origin master
+
